@@ -1,0 +1,39 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        Assignment 1 - reflection
+Full Name  : Manav Zadafiya
+Student ID#: 144095221
+Email      : mazadafiya@myseneca.ca
+Section    : ZEE
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+/////////////////////////////////////////////////////////////////////////*/
+
+ANSWER 1:
+I have created Total of five functions (4 in clinic module and 1 in core module) to make program work flawlessly.
+Out of these, the following three function are:
+
+   1.int availableTimeslot(struct Date date, struct Time time, struct Appointment* app, int maxAppointments);
+   This function checks if a specific time slot is available for scheduling an appointment. It takes as input a date and time representing the desired appointment time, an array of app representing existing appointments, and maxAppointments indicating the maximum number of appointments that can be scheduled. The function iterates through the existing appointments and compares the date and time of each appointment with the provided date and time. If a match is found, it indicates that the time slot is not available, and the function returns 0. If no match is found among the existing appointments, it indicates that the time slot is available, and the function returns 1.
+
+   2.int availableNextSlot(struct Appointment* app, int maxAppointments);
+   This function determines the index of the next available slot for scheduling an appointment.The function iterates through the app array and checks if the patientNumber of each appointment is less than 1. A patientNumber less than 1 typically indicates an available slot. When an available slot is found (i.e., a slot where no appointment has been scheduled), the function returns the index of that slot. If no available slot is found, it returns the value of maxAppointments, indicating that all slots are currently occupied. I have used this in 'addAppointment' function to check whether there is space to add another appointment.
+
+   3.int validAppointment(int patientNumber, struct Date date, struct Appointment* app, int maxAppointments);
+   This function checks whether a specific appointment is valid based on the provided patientNumber, date, and the array of existing appointments app. The function iterates through the existing appointments and compares the patientNumber, date (day, month, year) of each appointment with the provided inputs. If a matching appointment is found, it returns the index of that appointment. If no matching appointment is found, it returns -1 to indicate that the appointment is not valid. I have used this in 'removeAppointment' function to check if the appointment that the user wants to remove actually exists or not.
+
+Apart from this, other two functions: void inputNumStr(char str[], int numLen); and void sort(struct Appointment appoints[], int max); also play imporatant role to make this program work effectively by adding some validating condition for phone numbers and sorting data comprise of time and date in ascending order.
+
+
+
+
+ANSWER 2:
+The minimized use of the "scanf" function in the "client.c" source code file serves an important purposes within the context of programming structure design and principle.
+Firstly, reducing the number of "scanf" function calls minimizes the potential for user input-related errors. The "scanf" function can be prone to buffer overflows and unexpected behavior if not used carefully. As a programmer, we have to handle different types of input (valid and invalid) from user, by limiting its usage, the risk of rising run-time error and unexpected output can be eliminated. Secondly, minimizing "scanf" calls enhances code readability and modularity. Excessive use of "scanf" can clutter the code and make it harder to understand. By centralizing input reading, such as reading user commands or configuration data, into a single "scanf" call, the code becomes more organized and easier to maintain. This promotes code reusability and simplifies debugging and future modifications. Furthermore, the reduction of "scanf" calls promotes a separation of concerns between input handling and other logical operations. It enables the development of clean, focused functions that are responsible for specific tasks, promoting a more modular and scalable architecture.
+
+
+
+ANSWER 3:
+The all three functions explained above are placed in UTILITY part of clinic.c module as all these functions are used for checking available appointment slots. I consider all these functions as part of utility which provide users more functionality for booking and scheduling appointment and also makes it easier to check for available appointments. However, I placed one function (inputNumStr) in core.c module as this function validate the phone number and also core module contains exclusively of validating functions which validates the required data and give error message where wrong data is entered.

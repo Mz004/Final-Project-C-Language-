@@ -1,0 +1,8 @@
+﻿  clinic.c
+C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\clinic.c(920,9): warning C4101: 'i': unreferenced local variable
+  core.c
+C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\core.c(138,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\core.c(180,15): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\core.c(213,11): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Milestone3.vcxproj -> C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\x64\Debug\Milestone3.exe

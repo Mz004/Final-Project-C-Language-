@@ -1,0 +1,6 @@
+﻿  a1ms3.c
+  clinic.c
+  core.c
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1127,5): error MSB6006: "link.exe" exited with code 1168.
+LINK : fatal error LNK1168: cannot open C:\Users\manav\OneDrive\Desktop\SENECA CPP\Sem 1\IPC\Milestone\Milestone3\Debug\Milestone3.exe for writing
