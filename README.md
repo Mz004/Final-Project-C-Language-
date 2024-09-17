@@ -1,29 +1,74 @@
-# Basic patient(pet) appointment system for a veterinary clinic
+# Veterinarian Clinic System
 
-# Overview:
-This Project has been broken down into critical deadlines called milestones. Implementing projectsusing milestones will help you stay on target with respect to timelines and balancing out the workload. By the end of milestone #3, you will have created a basic patient (pet) appointment system for a veterinaryclinic. Patient contact information will be managed as well as the scheduling and management of appointments. Each milestone will build upon the previous, adding more functionality and components. Milestone #1 is focused on providing helper functions that will aid you in the development of the overall solution in future milestones. These functions will streamline your logic and simplify the overall readability and maintainability of your program by providing you with established routines that have been thoroughly tested for reliability and eliminate unnecessary code redundancy (so use them whenever possible and don't duplicate logic already done).
+This repository contains the implementation of a **Veterinarian Clinic System** developed as a final project for my C programming course in the first semester. The system allows a veterinary clinic to manage patient (pet) records and appointments, built through a series of milestones that gradually add more features.
 
-# Milestone – 1:
-This milestone includes a unit tester (a1ms1.c). A unit tester is a program which invokes your functions, passing them known parameter values. It then compares the results returned by your functions with the correct results to determine if your functions are working correctly. The tester should be used to confirm your solution meets the specifications for each “helper” function. The helper functions should be thoroughly tested and fail-proof (100% reliable) as they will be used throughout your assignment milestones. 
+---
 
-# Milestone – 2:
-This milestone comes with a starting framework for the veterinary clinic system (the menu system and basic display functions). Although a lot of code is already provided for you, there are still many functions you will need to define. Milestone-2 focuses on the management of the clinic's "patients" which are the records representing the family pets. You will need to create some data structures along with several functions that will be responsible for carrying out menu selections which perform specific tasks in the managing of patient data. A new module "clinic" is now required which will be used to organize all the clinic-centric components and where you will be placing most of your remaining work.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Milestone Overview](#milestone-overview)
+   - [Milestone 1](#milestone-1)
+   - [Milestone 2](#milestone-2)
+   - [Milestone 3](#milestone-3)
+3. [How to Use](#how-to-use)
+4. [Academic Integrity Warning](#academic-integrity-warning)
 
-# Milestone – 3:
-This milestone completes the veterinary clinic system with the addition of appointment management functionality and the importing of patient and appointment information from data text files. You will need to create additional data structures along with several functions that will be responsible for carrying out the new appointment management menu options that perform specific tasks in the management of appointment data.
+---
 
-# Specifications:
-Milestone-1 will establish the function “helpers” we will draw from as needed throughout the three milestones. These functions will handle routines that are commonly performed (greatly reduces code redundancy) and rovide assurance they accomplish what is expected without fail (must be reliable).
+## Introduction
 
-It is important to note that this code will not compile until you copy your work from Milestone-1 into the files for Milestone-2, create some new data types, and define the remaining uncoded function definitions.
+The **Veterinarian Clinic System** is designed to help veterinary clinics manage patient information (pets) and schedule appointments efficiently. This project was broken down into three critical milestones to help manage the workload and stay on track with deadlines. Each milestone builds upon the previous one, progressively adding functionality and components to the system.
 
-Like Milestone-2, it is important to note that this code will not compile until you copy your work from Milestone-2 into the provided files for Milestone-3. You will also need to create some new data types, as
-well as define the mandatory uncoded function prototypes and definitions that are new to Milestone-3.
+By the end of **Milestone 3**, the system allows for the following:
+- Managing patient contact information
+- Scheduling and managing appointments
+- Importing patient and appointment data from external files
 
-Three clinic module/library functions have been completely supplied for you: "displayScheduleHeader", "displayScheduleData", and "menuAppointment", along with two function prototypes: "importPatients" and "importAppointments" (responsible for data import). These functions provide you with the necessary framework to get started in this final milestone. In this milestone, it is expected you will create additional functions as you see fit to help you get the job done. It is also expected you will follow and adhere to the structured design principles.
+---
 
-# Acknowledgments:
-I extend sincere thanks to my Professor, and Seneca Polytechnic for their invaluable guidance, support, and resources in shaping this project.
+## Milestone Overview
 
-# Declaration:
-This repository is intended solely for reference purposes and is not to be copied, or misused in any form. The code and materials within this repository are the intellectual property of the author and are provided as a reference for learning and understanding. Any unauthorized use, reproduction, or distribution of this content is strictly prohibited and intend to do so can attract acedemic integrity.
+### Milestone 1
+**Focus**: Implementing helper functions
+
+In this milestone, I developed several helper functions that simplify logic and eliminate redundancy in the later stages. These functions are thoroughly tested for reliability using a unit tester program (`a1ms1.c`). The unit tester verifies that the helper functions work correctly by comparing the returned results against expected outputs.
+
+### Milestone 2
+**Focus**: Managing patient (pet) records
+
+Milestone 2 involves building the core structure of the veterinary clinic system. I defined new data structures to represent patient (pet) records and implemented several functions responsible for managing patient data. These functions interact with the clinic's menu system to perform tasks such as adding, updating, and viewing patient records.
+
+A new module called `clinic` was introduced in this milestone, where all clinic-centric components and code for managing the patients reside.
+
+### Milestone 3
+**Focus**: Appointment management and file handling
+
+In the final milestone, the system's functionality is extended to include appointment scheduling and management. Additional data structures and functions are introduced to manage appointments. Furthermore, the system now supports importing patient and appointment information from text data files, making it more robust and usable in real-world scenarios.
+
+---
+
+## How to Use
+
+To use the **Veterinarian Clinic System**, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/veterinarian-clinic-system.git
+   ```
+2. Navigate to the repository directory and compile the program using a C compiler (e.g., GCC):
+
+    ```bash
+    gcc main.c clinic.c a1ms1.c -o vet_clinic_system
+    ```
+3. Run the program:
+
+    ```bash
+    ./vet_clinic_system
+    ```
+4. Follow the on-screen menu to manage patient records and appointments.
+
+## Academic Integrity Warning
+This repository is intended solely for reference purposes and is not to be copied, or misused in any form. The code and materials within this repository are the intellectual property of the author and are provided as a reference for learning and understanding.
+
+### Important Notice
+Any unauthorized use, reproduction, or distribution of this content is strictly prohibited. Engaging in such actions may violate academic integrity policies, and intended misuse can result in academic consequences.
